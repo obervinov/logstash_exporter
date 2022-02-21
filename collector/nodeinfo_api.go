@@ -28,10 +28,10 @@ type NodeInfoResponse struct {
 		VMVendor          string `json:"vm_vendor"`
 		StartTimeInMillis int64  `json:"start_time_in_millis"`
 		Mem               struct {
-			HeapInitInBytes    int `json:"heap_init_in_bytes"`
-			HeapMaxInBytes     int `json:"heap_max_in_bytes"`
-			NonHeapInitInBytes int `json:"non_heap_init_in_bytes"`
-			NonHeapMaxInBytes  int `json:"non_heap_max_in_bytes"`
+			HeapInitInBytes    int64 `json:"heap_init_in_bytes"`
+			HeapMaxInBytes     int64 `json:"heap_max_in_bytes"`
+			NonHeapInitInBytes int64 `json:"non_heap_init_in_bytes"`
+			NonHeapMaxInBytes  int64 `json:"non_heap_max_in_bytes"`
 		} `json:"mem"`
 		GcCollectors []string `json:"gc_collectors"`
 	} `json:"jvm"`
