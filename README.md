@@ -1,3 +1,9 @@
+# This version exporter working with logstash version 7.9.2
+- Fixed error from build with deprecated dependency
+```github.com/prometheus/common/log: cannot find module providing package github.com/prometheus/common/log```
+- Fixed error parser with small integer variables type
+```msg="ERROR: info collector failed after 0.028665s: json: cannot unmarshal number 2147483648 into Go struct field .heap_init_in_bytes of type int" source="logstash_exporter.go:92"``` 
+
 # Logstash exporter [![Build Status](https://travis-ci.org/sequra/logstash_exporter.svg)]
 Prometheus exporter for the metrics available in Logstash since version 5.0.
 
